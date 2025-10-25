@@ -339,6 +339,8 @@ const BookingSystem = () => {
                         <label className="text-sm font-medium mb-2 block">Email Address *</label>
                         <Input
                           type="email"
+                          name="email"
+                          id="booking-email"
                           placeholder="your.email@example.com"
                           value={formData.email}
                           onChange={(e) => setFormData(prev => ({ ...prev, email: e.target.value }))}

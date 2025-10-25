@@ -26,6 +26,31 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Dobeu Tech Solutions" />
     <meta name="twitter:description" content="15+ years transforming supply chains through strategic operations management, cutting-edge technology consulting, and innovative brand development solutions." />
+
+    <script>
+      (function initApolloInbound() {
+        var nocache = Math.random().toString(36).substring(7);
+        var script = document.createElement('script');
+        script.src = 'https://assets.apollo.io/js/apollo-inbound.js?nocache=' + nocache;
+        script.defer = true;
+        script.onload = function() {
+          try {
+            if (window.ApolloInbound && window.ApolloInbound.formEnrichment) {
+              window.ApolloInbound.formEnrichment.init({
+                appId: '68fcdf9e32f1ab0021599b24'
+              });
+              console.log('Apollo Inbound form enrichment initialized successfully');
+            }
+          } catch (error) {
+            console.warn('Apollo Inbound initialization error:', error);
+          }
+        };
+        script.onerror = function() {
+          console.warn('Apollo Inbound script failed to load');
+        };
+        document.head.appendChild(script);
+      })();
+    </script>
   </head>
 
   <body>

@@ -177,6 +177,8 @@ const Newsletter = () => {
                   <div>
                     <Input
                       type="email"
+                      name="email"
+                      id="newsletter-email"
                       placeholder="Enter your email address"
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
